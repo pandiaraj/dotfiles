@@ -1,0 +1,29 @@
+[[language]]
+name = "rust"
+language-server = { command = "rust-analyzer" }
+formatter = { command = "rustfmt" }
+auto-format = true
+[language.config]
+checkOnSave = { command = "clippy" }
+indent = { tab-width = 4, unit = "t" }
+
+[[language]]
+name = "go"
+language-server = { command = "gopls" }
+formatter = { command = "gofmt" }
+auto-format = true
+[language.config]
+indent = { tab-width = 4, unit = "t" }
+
+[[language]]
+name = "java"
+scope = "source.java"
+injection-regex = "java"
+file-types = ["java"]
+roots = ["build.xml", "pom.xml", "settings.gradle", "settings.gradle.kts", ".idea", ".prj"]
+language-server = { command = "jdtls", args = [
+  "-configuratio", "/Users/pandiaraj/.cache/jdtls/config",
+  "-data", "/Users/pandiaraj/.cache/jdtls/workspace",
+] }
+[language.config]
+indent = { tab-width = 4, unit = "t" }

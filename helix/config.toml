@@ -1,0 +1,28 @@
+theme = "dark_plus"
+
+[editor]
+cursorline = true
+mouse = false
+bufferline = "multiple"
+rulers = [120]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+character = "|"
+render = true
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name"]
+right = ["diagnostics", "selections", "position", "file-type"]
+
+[editor.lsp]
+display-messages = true
+auto-signature-help = false
+display-inlay-hints = true
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
