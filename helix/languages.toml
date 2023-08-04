@@ -22,8 +22,8 @@ injection-regex = "java"
 file-types = ["java"]
 roots = ["build.xml", "pom.xml", "settings.gradle", "settings.gradle.kts", ".idea", ".prj"]
 language-server = { command = "jdtls", args = [
-  "-configuratio", "/Users/pandiaraj/.cache/jdtls/config",
-  "-data", "/Users/pandiaraj/.cache/jdtls/workspace",
+  "-configuration", "/home/pandiaraj/.cache/jdtls/config",
+  "-data", "/home/pandiaraj/.cache/jdtls/workspace",
 ] }
 [language.config]
 indent = { tab-width = 4, unit = "t" }
